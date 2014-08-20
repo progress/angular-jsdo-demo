@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app>
+	<head>
+		<title>Hello World!</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+		<script src="public/rest.js"></script>
+	</head>
+	<body>
+		<div ng-controller="Hello">
+			<p>The first company's name is {{companies[0].name}} </p>
+		
+			<table border = 1 cellspacing = 3 cellpadding = 5>
+				<tr>
+					<th>Name</th> 
+					<th>Address</th>
+					<th>City</th>
+					<th>State</th> 
+				</tr>
+				<tr ng-repeat="company in companies">
+					<th>{{company.name}}</th>
+					<th>{{company.address}}</th>
+					<th>{{company.city}}</th>
+					<th>{{company.state}}</th>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
