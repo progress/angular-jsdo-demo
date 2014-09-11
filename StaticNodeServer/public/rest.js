@@ -1,15 +1,14 @@
-function Hello($scope, $http)
+function GetData($scope, $http)
 {
 	$http({method: 'GET', url: 'http://angulardemo-21580.onmodulus.net/test'}).
 	success(function(data)
 	{
-		console.log('good');
+		console.log('succeeded');
 		$scope.companies = data;
-		console.log(data);
 	}).
 	error(function(data)
 	{
-		console.log('bad');
+		console.log('failed');
 		$scope.companies = 'error';
 	});
 }
