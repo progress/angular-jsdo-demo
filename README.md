@@ -4,5 +4,8 @@ This project contains a node.js server that takes data from an OpenEdge Mobile s
 ### Project Directories
 StaticNodeServer - This directory contains the static node server that serves the json content to the end user, formatted with AngularJS. 
 
+### License
+License for the Sample is MIT.  License does not cover progress.js nor progress.session.js but they are redistributable.
+
 ### Relevant Blog Posts
 [Displaying OpenEdge Data in an AngularJS Web App](http://dcinglis.wordpress.com/2014/08/19/display-openedge-data-in-an-angularjs-web-app/)
